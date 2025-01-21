@@ -1,0 +1,4 @@
+INFO  | 2025-01-21 23:31:53 | [main] DaoImpl.DaoImpl (DaoImpl.java:38) - All books found
+INFO  | 2025-01-21 23:31:53 | [main] DaoImpl.DaoImpl (DaoImpl.java:57) - book deleted successfully
+INFO  | 2025-01-21 23:31:53 | [main] DaoImpl.DaoImpl (DaoImpl.java:91) - book updated successfully
+INFO  | 2025-01-21 23:31:53 | [main] DaoImpl.DaoImpl (DaoImpl.java:38) - All books found

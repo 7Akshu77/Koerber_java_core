@@ -6,9 +6,9 @@ import Repo.DaoException.DaoException;
 import Repo.DaoException.DaoImpl.DaoImpl;
 
 import java.util.List;
-@ExtendWith(MockitoExtension.class)
-public class ServiceImp implements Services {
 
+public class ServiceImp implements Services {
+     BookDao dao = new DaoImpl();
 
     @Override
     public List<Book> getAllBooks() throws DaoException {

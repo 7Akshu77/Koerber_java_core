@@ -6,10 +6,11 @@ import Repo.DaoException.DaoException;
 import Repo.DaoException.DaoImpl.DaoImpl;
 
 import java.util.List;
-@ExtendWith(MockitoExtension.class)
+import java.util.logging.Logger;
+
 public class ServiceImp implements Services {
-
-
+BookDao dao = new DaoImpl();
+public Logger logger = Logger.getLogger(ServiceImp.class.getName());
     @Override
     public List<Book> getAllBooks() throws DaoException {
        return dao.getAllBooks();
@@ -33,7 +34,7 @@ public class ServiceImp implements Services {
     @Override
     public Book getBookById(int id) throws DaoException {
         Book book =dao.getBookById(id);
-        if(book == null){
+        if (book == null) {
             throw new DaoException("Book not found");
         }
         else{

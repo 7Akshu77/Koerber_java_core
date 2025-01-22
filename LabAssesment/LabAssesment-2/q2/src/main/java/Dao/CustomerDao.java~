@@ -1,0 +1,6 @@
+package Dao;
+
+public interface CustomerDao {
+    public void addCustomer(int id);
+    public void findCustomer(int id);
+}

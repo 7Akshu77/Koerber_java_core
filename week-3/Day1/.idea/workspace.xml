@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cff7894d-5659-488f-9c45-b199ccfcc11b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/XML/src/main/java/org/example/persistence/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XML/src/main/java/org/example/persistence/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XML/src/main/java/org/example/persistence/BookDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XML/src/main/java/org/example/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XML/src/main/java/org/example/service/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XML/src/main/java/org/example/web/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XML/src/main/resources/demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/Day7/Day7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/Day7/Day7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/src/main/java/Connection/FactoryConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/src/main/java/Connection/FactoryConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/src/main/java/Repo/DaoException/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/src/main/java/Repo/DaoException/DaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/src/main/java/Repo/DaoException/DaoImpl/DaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/src/main/java/Repo/DaoException/DaoImpl/DaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/src/main/java/Service/ServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/src/main/java/Service/ServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/src/main/resources/dbconn.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/src/main/resources/dbconn.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/src/test/java/Service/ServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/src/test/java/Service/ServiceImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/target/classes/Connection/FactoryConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/target/classes/Connection/FactoryConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/target/classes/Repo/DaoException/DaoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/target/classes/Repo/DaoException/DaoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/target/classes/Repo/DaoException/DaoImpl/DaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/target/classes/Repo/DaoException/DaoImpl/DaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/target/classes/Service/ServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/target/classes/Service/ServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-2/days/target/classes/dbconn.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-2/days/target/classes/dbconn.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2s2NF0sxdHHNDTtztoEV8ewNwnj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Akshaya.Sharavana/Koerber/week-3/Day1"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cff7894d-5659-488f-9c45-b199ccfcc11b" name="Changes" comment="" />
+      <created>1737649601687</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737649601687</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<Configuration status="WARN">
+    <Appenders>
+        <!--  File Appender  -->
+        <File name="FileAppender" fileName="logs/logfile.log" append="true">
+            <PatternLayout>
+                <pattern>%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n</pattern>
+            </PatternLayout>
+        </File>
+        <!--  Console Appender  -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n</pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!--  Logger for a specific package  -->
+        <Logger name="com.bankapp.service" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+        <!--  Root Logger  -->
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

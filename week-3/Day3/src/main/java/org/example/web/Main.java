@@ -12,11 +12,11 @@ public class Main {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(ConfigApp.class);
         Service service = (Service) ctx.getBean("bs");
        service.addBook(new Book(1,"123434","asdf","author1",23));
-//        service.getAllBooks().forEach(System.out::println);
-//        service.addBook(new Book(2,"123434","asdf","author2",33));
-//        service.getBookById(1);
-//        service.updateBook(1,new Book(1,"123434","asdf","author3",43));
-//        service.getAllBooks().forEach(System.out::println);
+        service.getAllBooks().forEach(System.out::println);
+        service.addBook(new Book(2,"123434","asdf","author2",33));
+        service.getBookById(1);
+        service.updateBook(1,new Book(1,"123434","asdf","author3",43));
+        service.getAllBooks().forEach(System.out::println);
         service.deleteBook(1);
         service.getAllBooks().forEach(System.out::println);
 

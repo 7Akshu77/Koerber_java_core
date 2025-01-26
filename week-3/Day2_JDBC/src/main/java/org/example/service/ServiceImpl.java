@@ -5,11 +5,12 @@ import org.example.persistence.BookDao;
 
 import java.util.List;
 import org.example.persistence.Book;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+@org.springframework.stereotype.Service(value = "bs")
 public class ServiceImpl implements Service {
-
-BookDao dao;
-
+private BookDao dao;
+    @Autowired
    public ServiceImpl(BookDao dao) {
         this.dao = dao;
     }

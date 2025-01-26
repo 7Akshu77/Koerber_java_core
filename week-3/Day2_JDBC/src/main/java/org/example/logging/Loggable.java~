@@ -1,0 +1,11 @@
+package org.example.logging;
+
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+@Target(java.lang.annotation.ElementType.METHOD)
+@Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
+public @interface Loggable {
+
+}

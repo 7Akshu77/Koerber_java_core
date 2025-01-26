@@ -10,8 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(ConfigApp.class);
-        Service service = (Service) ctx.getBean("bs");
-       service.addBook(new Book(1,"123434","asdf","author1",23));
+        Service service = (Service) ctx.getBean("bs",Service.class);
+       service.addBook(new Book(10,"123434","asdf","author1",23));
 //        service.getAllBooks().forEach(System.out::println);
 //        service.addBook(new Book(2,"123434","asdf","author2",33));
 //        service.getBookById(1);

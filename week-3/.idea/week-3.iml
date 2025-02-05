@@ -6,9 +6,22 @@
       <sourceFolder url="file://$MODULE_DIR$/Day2_new/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Day3_new/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Day4/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day3/bookapp/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day4/bookapp/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.37" level="project" />
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: com.mysql:mysql-connector-j:8.0.32" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.7" level="project" />
   </component>
 </module>

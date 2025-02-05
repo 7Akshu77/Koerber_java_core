@@ -26,10 +26,11 @@ public class BookServiceImpl implements BookService {
     public List<Book> getAllBooks() {
         return repo.findAll();
     }
+
     @Override
-    public Book getBookById(int id)  {
+    public Book getBookById(int id) {
         return repo.findById(id).
-                orElseThrow(()-> new BookNotFound("Book of id"+id+"not found"));
+                orElseThrow(() -> new BookNotFound("Book of id" + id + "not found"));
     }
 
     @Override
@@ -37,9 +38,10 @@ public class BookServiceImpl implements BookService {
         repo.save(book);
         return book;
     }
+
     @Loggable
     @Override
-    public Book updateBook(int id,Book book) {
+    public Book updateBook(int id, Book book) {
         Book b1 = getBookById(id);
         b1.setIsbn(book.getIsbn());
         b1.setTitle(book.getTitle());
@@ -49,14 +51,11 @@ public class BookServiceImpl implements BookService {
         repo.save(b1);
         return b1;
     }
+
     @Loggable
     @Override
     public void deleteBookById(int id) {
         Book bootToRemove = getBookById(id);
         repo.delete(bootToRemove);
     }
-    @Override
-    public Book getByCategory(String category){
-        return repo.getByCategory(category);
-    }
-    }
+}

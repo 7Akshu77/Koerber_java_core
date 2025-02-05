@@ -15,5 +15,4 @@ public interface BookService {
 
     public void deleteBookById(int id);
 
-    public Book getByCategory(String category);
 }

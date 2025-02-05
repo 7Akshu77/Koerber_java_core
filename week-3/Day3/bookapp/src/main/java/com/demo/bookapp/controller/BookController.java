@@ -45,8 +45,4 @@ public class BookController {
         bookService.deleteBookById(id);
         return ResponseEntity.status(HttpStatus.OK).body("Book deleted successfully");
     }
-    @GetMapping(path = "books/category/{category}")
-    public ResponseEntity<Book> getByCategory(@PathVariable String category){
-        return ResponseEntity.status(HttpStatus.OK).body(bookService.getByCategory(category));
-    }
 }

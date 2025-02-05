@@ -6,14 +6,18 @@ import com.demo.bookapp.loggapp.Loggable;
 import com.demo.bookapp.repo.BookRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Lookup;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class BookServiceImpl implements BookService {
+
     private BookRepo repo;
 
     @Autowired
@@ -24,13 +28,13 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<Book> getAllBooks() {
+
         return repo.findAll();
     }
-
     @Override
-    public Book getBookById(int id) {
+    public Book getBookById(int id)  {
         return repo.findById(id).
-                orElseThrow(() -> new BookNotFound("Book of id" + id + "not found"));
+                orElseThrow(()-> new BookNotFound("Book of id"+id+"not found"));
     }
 
     @Override
@@ -38,10 +42,9 @@ public class BookServiceImpl implements BookService {
         repo.save(book);
         return book;
     }
-
     @Loggable
     @Override
-    public Book updateBook(int id, Book book) {
+    public Book updateBook(int id,Book book) {
         Book b1 = getBookById(id);
         b1.setIsbn(book.getIsbn());
         b1.setTitle(book.getTitle());
@@ -51,11 +54,25 @@ public class BookServiceImpl implements BookService {
         repo.save(b1);
         return b1;
     }
-
     @Loggable
     @Override
     public void deleteBookById(int id) {
         Book bootToRemove = getBookById(id);
         repo.delete(bootToRemove);
     }
+    @Override
+    public Book getByCategory(String category){
+        return repo.getByCategory(category);
+    }
+
+    @Override
+    public Page<Book> findAll(Pageable pageable) {
+        System.out.println("this is a scheduled task");
+        return repo.findAll(pageable);
+
+    }
+    @Override
+    public void hello(){
+    }
+
 }

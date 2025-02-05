@@ -1,0 +1,6 @@
+spring:
+  application:
+  name:
+    value: "WeatherClient"
+  port:
+    value: 8085

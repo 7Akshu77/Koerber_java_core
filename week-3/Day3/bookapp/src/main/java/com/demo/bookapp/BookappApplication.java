@@ -34,9 +34,9 @@ public class BookappApplication  implements CommandLineRunner{
 
 
 		logger.info("product app is started");
-//		repo.save(new com.demo.bookapp.entities.Book("1234","book1","category1","author1",BigDecimal.valueOf(150)));
-//		repo.save(new com.demo.bookapp.entities.Book("1235","book2","category2","author2",BigDecimal.valueOf(200)));
-//		System.out.println("----------product is added------");
+		repo.save(new com.demo.bookapp.entities.Book("1234","book1","category1","author1",BigDecimal.valueOf(150)));
+		repo.save(new com.demo.bookapp.entities.Book("1235","book2","category2","author2",BigDecimal.valueOf(200)));
+		System.out.println("----------product is added------");
 		}
 	}
 

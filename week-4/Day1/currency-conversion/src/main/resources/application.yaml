@@ -1,0 +1,27 @@
+spring:
+  application:
+   name: currency-conversion
+
+
+feign:
+  circuitbreaker:
+    enabled: true
+  client:
+   config:
+    default:
+     connectTimeout: 2000
+     readTimeout: 2000
+server:
+  port: 8100
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+    lowercase-service-id: true
+

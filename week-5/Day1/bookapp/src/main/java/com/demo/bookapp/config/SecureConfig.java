@@ -22,9 +22,10 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.stereotype.Component;
 
 
+
 @Component
 @EnableWebSecurity
-@EnableMethodSecurity
+@EnableMethodSecurity(prePostEnabled = true)
 public class SecureConfig {
     @Autowired
     private DetailService userDetailsService;
@@ -40,20 +41,14 @@ public class SecureConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
                 .cors(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(registry ->
-                        registry.requestMatchers("/books/add").hasAnyRole("ADMIN")
-                                .requestMatchers("/books/delete").hasAnyRole("ADMIN")
-                                .requestMatchers("/books/update").hasAnyRole("ADMIN")
-                                .requestMatchers("/books/**").permitAll()
-                                .anyRequest().authenticated()
-                )
+                .authorizeHttpRequests(registry -> registry.anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(httpSecuritySessionManagementConfigurer ->
-                        httpSecuritySessionManagementConfigurer.
-                                sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+                        httpSecuritySessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         return http.build();
     }
+
 
     @Bean
     public PasswordEncoder passwordEncoder(){

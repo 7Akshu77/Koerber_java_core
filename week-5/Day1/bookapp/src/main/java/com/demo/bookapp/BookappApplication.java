@@ -51,10 +51,11 @@ public class BookappApplication  implements CommandLineRunner{
 		repo.save(new com.demo.bookapp.entities.Book("1237","book4","category4","author4",BigDecimal.valueOf(300)));
 		System.out.println("----------product is added------");
 			userService.addUserEntity(new UserEntity("teacher",
-					passwordEncoder.encode("te123"), List.of("ADMIN","GEN")));
+					passwordEncoder.encode("te123"), List.of("ROLE_ADMIN","ROLE_GEN")));
 
 			userService.addUserEntity(new UserEntity("student",passwordEncoder.encode("st123"),
-					List.of("GEN")));
+					List.of("ROLE_GEN")));
+			System.out.println("----------------user added-----------------");
 
 		}
 	}

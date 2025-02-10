@@ -1,7 +1,11 @@
 package com.demo.bookapp.config;
 
 
+import com.demo.bookapp.service.DetailService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -18,21 +22,20 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.stereotype.Component;
 
 
+
 @Component
 @EnableWebSecurity
-@EnableMethodSecurity
+@EnableMethodSecurity(prePostEnabled = true)
 public class SecureConfig {
+    @Autowired
+    private DetailService userDetailsService;
+
     @Bean
-    public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {
-        UserDetails teacher = User.withUsername("teacher")
-                .password(passwordEncoder.encode("te123"))
-                .roles("ADMIN")
-                .build();
-        UserDetails student = User.withUsername("student")
-                .password(passwordEncoder.encode("st123"))
-                .roles("ST")
-                .build();
-        return new InMemoryUserDetailsManager(student, teacher);
+    public AuthenticationProvider getAuthentication(){
+        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
+        provider.setUserDetailsService(userDetailsService);
+        provider.setPasswordEncoder(passwordEncoder());
+        return provider;
     }
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {

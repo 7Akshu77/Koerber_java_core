@@ -1,0 +1,5 @@
+com\currencyconversion\CurrencyConversionApplication.class
+com\currencyconversion\serviceproxy\CurrencyFallBack.class
+com\currencyconversion\controller\CurrencyConversionController.class
+com\currencyconversion\serviceproxy\CurrencyExchangeServiceProxy.class
+com\currencyconversion\dto\CurrencyConversionBean.class

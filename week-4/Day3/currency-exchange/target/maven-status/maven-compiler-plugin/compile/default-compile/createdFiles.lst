@@ -1,0 +1,6 @@
+com\currencyexchange\controller\CurrencyExchangeController.class
+com\currencyexchange\repo\ExchangeValue.class
+com\currencyexchange\service\ExchangeServiceImpl.class
+com\currencyexchange\CurrencyExchangeApplication.class
+com\currencyexchange\repo\ExchangeValueRepository.class
+com\currencyexchange\service\ExchangeService.class

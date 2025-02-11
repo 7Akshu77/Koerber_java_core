@@ -1,9 +1,11 @@
 spring:
+  profiles: dev
+  config:
+    import: optional:configserver:http://localhost:8888
   application:
-    active: dev
     name : currency-conversion
 server:
-  port : 8100
+  port : 8000
 eureka:
   instance:
     prefer-ip-address: true

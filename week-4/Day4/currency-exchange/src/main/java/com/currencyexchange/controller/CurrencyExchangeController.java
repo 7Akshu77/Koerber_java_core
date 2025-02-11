@@ -5,6 +5,7 @@ import com.currencyexchange.service.ExchangeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,11 +16,19 @@ public class CurrencyExchangeController {
 	
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
+	@Value("${application.name}")
+	private String appName;
+
 	@Autowired
 	private Environment environment;
 	
 	@Autowired
 	private ExchangeService exchangeService;
+
+	@GetMapping("/appName")
+	public String appName(){
+		return appName;
+	}
 
 	//http://localhost:8000/currency-exchange/from/USD/to/INR
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")

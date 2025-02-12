@@ -1,9 +1,6 @@
 spring:
-  profiles: dev
-  config:
-    import: optional:configserver:http://localhost:8888
   application:
-    name : currency-conversion
+   name : currency-conversion
 server:
   port : 8100
 eureka:

@@ -1,12 +1,17 @@
-spring:
-  config:
-    import: optional:configserver:http://localhost:8888
-  application:
-    name : con-app
-custom:
-  message: "hello world"
 server:
-  port : 8100
+  port: 8072
+spring:
+  main:
+    web-application-type: reactive
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:7080/realms/master/protocol/openid-connect/certs"
+
+  application:
+    name: gateway
+
 eureka:
   instance:
     prefer-ip-address: true
@@ -15,10 +20,6 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
-  cloud:
-    openfeign:
-      circuitbreaker:
-        enabled: true
 
 management:
   endpoints:
@@ -39,20 +40,6 @@ management:
   tracing:
     sampling:
       probability: 1.0
-
-
-resilience4j:
-  circuitbreaker:
-    configs:
-      default:
-        sliding-window-size: 10
-        permitted-number-of-calls-in-half-open-state: 2
-
-        failure-rate-threshold: 50 #percentage
-        wait-duration-in-open-state: 10s
-
-
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
-

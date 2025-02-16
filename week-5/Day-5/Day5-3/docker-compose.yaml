@@ -1,0 +1,22 @@
+version: '3'
+services:
+  mysql-standalone:
+    image: 'mysql:5.7'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=bookdb
+    ports:
+      - "3307:3306"
+
+  bookstore-container:
+    build:
+      context: "./"
+      dockerfile: "Dockerfile"
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-standalone:3306/bookdb?autoReconnect=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: "root"
+      SPRING_DATASOURCE_PASSWORD: "root"
+    depends_on:
+      - mysql-standalone

@@ -1,4 +1,5 @@
-FROM ubuntu:latest
-LABEL authors="Akshaya.Sharavana"
-
-ENTRYPOINT ["top", "-b"]
+FROM openjdk:21
+MAINTAINER email="akshuaksh777@gmail.com"
+EXPOSE 8000
+ADD bookapp/target/bookapp-3.3.8.jar bookapp.jar
+ENTRYPOINT ["java", "-jar", "bookapp.jar"]

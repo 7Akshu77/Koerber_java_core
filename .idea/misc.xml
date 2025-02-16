@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/week-2/days/pom.xml" />
+        <option value="$PROJECT_DIR$/week-2/Day10/days/pom.xml" />
+        <option value="$PROJECT_DIR$/week-2/Day11/pom.xml" />
+        <option value="$PROJECT_DIR$/week-3/Day1/XML/pom.xml" />
+        <option value="$PROJECT_DIR$/week-3/Day1/Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/week-3/Day1/Configuration_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/week-3/Day1/Configuration_component/pom.xml" />
+        <option value="$PROJECT_DIR$/week-3/Day2/pom.xml" />
+        <option value="$PROJECT_DIR$/week-3/Day3/bookapp/pom.xml" />
+        <option value="$PROJECT_DIR$/week-3/Day4/bookapp/pom.xml" />
+        <option value="$PROJECT_DIR$/week-3/Day2_JDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/LabAssesment/bankapp/pom.xml" />
+        <option value="$PROJECT_DIR$/LabAssesment/LabAssesment-2/q2/pom.xml" />
+        <option value="$PROJECT_DIR$/LabAssesment/LabAssesment-3/pom.xml" />
+        <option value="$PROJECT_DIR$/week-4/Day1/WeatherClient/pom.xml" />
+        <option value="$PROJECT_DIR$/week-4/Day1/WeatherServer/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day-4/consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day-4/producer/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day1/bookapp/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day3/bookapp/pom.xml" />
+        <option value="$PROJECT_DIR$/week-4/Day4/currency-conversion/pom.xml" />
+        <option value="$PROJECT_DIR$/week-4/Day4/currency-exchange/pom.xml" />
+        <option value="$PROJECT_DIR$/week-4/Day4/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/week-4/Day4/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/week-4/Day4/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day3/currency-conversion/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day3/currency-exchange/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day3/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day3/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day5/bookapp/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day5-2/currency-conversion/pom.xml" />
+        <option value="$PROJECT_DIR$/week-5/Day5-2/currency-exchange/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

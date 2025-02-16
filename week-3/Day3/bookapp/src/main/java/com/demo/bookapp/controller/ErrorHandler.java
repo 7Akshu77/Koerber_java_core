@@ -1,6 +1,5 @@
 package com.demo.bookapp.controller;
 
-import com.demo.bookapp.exception.BookNotFound;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -11,16 +10,6 @@ import java.util.stream.Collectors;
 
 @RestControllerAdvice
 public class ErrorHandler {
-
-    @ExceptionHandler(BookNotFound.class)
-    public ResponseEntity<ErrorDetails> handle404(BookNotFound ex){
-        ErrorDetails error= ErrorDetails.builder().errorCode(404)
-                .timestamp(java.time.LocalDateTime.now())
-                .errorMessage(ex.getMessage())
-                .toContact("Admin@koerber.com").build();
-        return ResponseEntity.status(404).body(error);
-    }
-
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ErrorDetails> handle400(MethodArgumentNotValidException ex){
         String errorMsg = ex.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage)

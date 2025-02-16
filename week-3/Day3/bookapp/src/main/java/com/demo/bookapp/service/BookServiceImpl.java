@@ -1,8 +1,6 @@
 package com.demo.bookapp.service;
 
 import com.demo.bookapp.entities.Book;
-import com.demo.bookapp.exception.BookNotFound;
-import com.demo.bookapp.loggapp.Loggable;
 import com.demo.bookapp.repo.BookRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Lookup;
@@ -28,9 +26,9 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Book getBookById(int id) {
+    public Book getBookById(int id) throws Exception {
         return repo.findById(id).
-                orElseThrow(() -> new BookNotFound("Book of id" + id + "not found"));
+                orElseThrow(() -> new Exception("Book of id" + id + "not found"));
     }
 
     @Override
@@ -39,9 +37,8 @@ public class BookServiceImpl implements BookService {
         return book;
     }
 
-    @Loggable
     @Override
-    public Book updateBook(int id, Book book) {
+    public Book updateBook(int id, Book book) throws Exception{
         Book b1 = getBookById(id);
         b1.setIsbn(book.getIsbn());
         b1.setTitle(book.getTitle());
@@ -52,9 +49,9 @@ public class BookServiceImpl implements BookService {
         return b1;
     }
 
-    @Loggable
+
     @Override
-    public void deleteBookById(int id) {
+    public void deleteBookById(int id) throws Exception {
         Book bootToRemove = getBookById(id);
         repo.delete(bootToRemove);
     }

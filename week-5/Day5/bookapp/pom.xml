@@ -10,7 +10,6 @@
 	</parent>
 	<groupId>com.bookapp</groupId>
 	<artifactId>bookapp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>bookapp</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -86,16 +85,19 @@
 			<artifactId>jakarta.el</artifactId>
 			<version>4.0.2</version>
 		</dependency>
-        <dependency>
-            <groupId>com.bookapp</groupId>
-            <artifactId>bookapp</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>akshaya7777/${project.artifactId}:v1</name>
+					</image>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

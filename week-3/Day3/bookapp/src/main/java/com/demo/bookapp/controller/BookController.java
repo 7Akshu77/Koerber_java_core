@@ -36,12 +36,12 @@ public class BookController {
     }
 
     @PutMapping(path = "books/{id}")
-    public ResponseEntity<Book> updateBook(@PathVariable int id, @RequestBody Book book){
+    public ResponseEntity<Book> updateBook(@PathVariable int id, @RequestBody Book book) throws Throwable {
         return ResponseEntity.status(HttpStatus.OK).body(bookService.updateBook(id,book));
     }
 
     @DeleteMapping(path = "books/{id}")
-    public ResponseEntity<String> deleteBookById(@PathVariable int id){
+    public ResponseEntity<String> deleteBookById(@PathVariable int id) throws Throwable {
         bookService.deleteBookById(id);
         return ResponseEntity.status(HttpStatus.OK).body("Book deleted successfully");
     }

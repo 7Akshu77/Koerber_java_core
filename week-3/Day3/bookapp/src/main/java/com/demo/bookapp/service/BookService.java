@@ -11,8 +11,8 @@ public interface BookService {
 
     public Book addBook(Book book);
 
-    public Book updateBook(int id,Book book);
+    public Book updateBook(int id,Book book) throws Throwable;
 
-    public void deleteBookById(int id);
+    public void deleteBookById(int id) throws Throwable;
 
 }

@@ -1,4 +1,0 @@
-FROM openjdk:21
-WORKDIR /app
-COPY target/currency-exchange-*.jar app-exchange.jar
-ENTRYPOINT ["java", "-jar", "app-exchange.jar"]

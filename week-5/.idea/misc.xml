@@ -6,7 +6,17 @@
       <list>
         <option value="$PROJECT_DIR$/Day5-2/currency-exchange/pom.xml" />
         <option value="$PROJECT_DIR$/Day5-2/currency-conversion/pom.xml" />
+        <option value="$PROJECT_DIR$/Day5/bookapp/pom.xml" />
+        <option value="$PROJECT_DIR$/Day-5/Day5-2/currency-conversion/pom.xml" />
+        <option value="$PROJECT_DIR$/Day-5/Day5-2/currency-exchange/pom.xml" />
+        <option value="$PROJECT_DIR$/Day-5/Day5-3/bookapp/pom.xml" />
+        <option value="$PROJECT_DIR$/Day-6/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Day-6/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">

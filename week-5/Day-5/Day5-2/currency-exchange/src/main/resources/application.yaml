@@ -2,7 +2,7 @@ spring:
   application:
    name : currency-exchange
 server:
-  port : 8000
+  port : 8090
 management:
   tracing:
     sampling:

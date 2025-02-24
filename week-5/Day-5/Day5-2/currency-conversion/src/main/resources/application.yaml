@@ -2,7 +2,7 @@ spring:
   application:
    name : currency-conversion
 server:
-  port : 8100
+  port : 8070
 eureka:
   instance:
     prefer-ip-address: true
@@ -15,6 +15,10 @@ eureka:
     openfeign:
       circuitbreaker:
         enabled: true
+
+currency-exchnage:
+  service:
+    url: http://currency-excahnge:8000
 
 management:
   endpoints:

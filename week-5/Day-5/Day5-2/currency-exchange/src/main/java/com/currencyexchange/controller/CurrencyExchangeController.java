@@ -21,7 +21,7 @@ public class CurrencyExchangeController {
 	@Autowired
 	private ExchangeService exchangeService;
 
-	//http://localhost:8000/currency-exchange/from/USD/to/INR
+	//http://localhost:8090/currency-exchange/from/USD/to/INR
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	public ExchangeValue retrieveExchangeValue(@PathVariable String from, @PathVariable String to){
 		

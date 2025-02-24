@@ -20,7 +20,7 @@ public class CurrencyConversionController {
 	@Autowired
 	private CurrencyExchangeProxy currencyExchangeProxy;
 
-	@GetMapping("currency-conversion/from/{from}/to/{to}/quantity/{quantity}")
+	@GetMapping("/currency-conversion/from/{from}/to/{to}/quantity/{quantity}")
 	public CurrencyConversionBean retrieveExchangeValue(
 			@PathVariable String from,
 			@PathVariable String to,

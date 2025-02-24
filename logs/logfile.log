@@ -1,0 +1,2 @@
+INFO  | 2025-02-17 22:16:53 | [main] aspect.LoggingAspect (LoggingAspect.java:22) - delete starting
+INFO  | 2025-02-17 22:16:53 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - deleting is successful and the time taken is 1 deleteBook

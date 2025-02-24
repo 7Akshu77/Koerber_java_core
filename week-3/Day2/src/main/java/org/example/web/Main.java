@@ -6,6 +6,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.example.persistence.Book;
 import org.example.service.Service;
+
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,8 +20,9 @@ public class Main {
 //        service.getBookById(1);
 //        service.updateBook(1,new Book(1,"123434","asdf","author3",43));
 //        service.getAllBooks().forEach(System.out::println);
-        service.deleteBook(1);
-        service.getAllBooks().forEach(System.out::println);
+        //service.deleteBook(1);
+        //service.getAllBooks().forEach(System.out::println);
+
 
     }
 }

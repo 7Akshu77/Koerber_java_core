@@ -30,6 +30,11 @@
     <file url="file://$PROJECT_DIR$/week-4/Day4/configserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/week-4/Day4/currency-conversion/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/week-4/Day4/currency-exchange/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-4/Day4/currency_app/configserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-4/Day4/currency_app/currency-conversion/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-4/Day4/currency_app/currency-exchange/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-4/Day4/currency_app/eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-4/Day4/currency_app/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/week-4/Day4/eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/week-4/Day4/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/week-5/Day-4/consumer/src/main/java" charset="UTF-8" />
@@ -44,5 +49,13 @@
     <file url="file://$PROJECT_DIR$/week-5/Day5-2/currency-conversion/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/week-5/Day5-2/currency-exchange/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/week-5/Day5/bookapp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-5/Day6/Day2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-5/Day6/Day2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-5/Day6/bookapp/bookapp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-6/day-1/mongo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-6/day-2/mongo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-6/day-3/productapp-assignment3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-6/day-4/productapp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/week-6/day-5/productapp/src/main/java" charset="UTF-8" />
   </component>
 </project>

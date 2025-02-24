@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: file:///C:\Users\Akshaya.Sharavana\Downloads\currency_app\propfiles
+          uri: file:///C:/propfiles
           clone-on-start: true
           default-label: master
 server:

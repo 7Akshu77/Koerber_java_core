@@ -1,0 +1,38 @@
+spring:
+  data:
+    mongodb:
+      host: mongodb
+      port: 27017
+      database: productdb
+      repositories:
+        enabled: true
+  application:
+    name: productapp
+server:
+  port:
+    8000
+logging:
+  level:
+    org.springframework.data.mongodb.repository.query: debug
+    org.springframework.data.mongodb.core.repository.query: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+  endpoint:
+    gateway:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+

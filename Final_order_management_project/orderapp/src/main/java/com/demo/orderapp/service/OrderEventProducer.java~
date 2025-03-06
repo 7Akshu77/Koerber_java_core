@@ -1,0 +1,20 @@
+package com.demo.orderapp.service;
+
+import com.demo.orderapp.dto.NotificationDto;
+import com.demo.orderapp.dto.OrderDto;
+import com.demo.orderapp.entity.Order;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Service;
+
+@Service
+public class OrderEventProducer {
+
+    @Autowired
+    private KafkaTemplate<String, NotificationDto> kafkaTemplate;
+
+    public void sendOrderPlacedEvent(OrderDto order) {
+        NotificationDto event = new NotificationDto(order.getBarCode(), order.getEmailId());
+        kafkaTemplate.send("order-topic", event);
+    }
+}
